@@ -1,8 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-}
+    font-family: 'Poppins', sans-serif;}
 .header{
     min-height: 100vh;
     width: 100%;
@@ -13,7 +12,7 @@
 }
 nav{
     display: flex;
-    padding: 1% 10%;
+    padding: 1% 7%;
     justify-content: space-between;
     align-items: center;
 }
@@ -28,13 +27,26 @@ nav img{
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 7px 12px;
     position: relative;
+}
+.nav-links ul li button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 7px 18px;
+    font-size: 14px;
+    background: rgba(40, 240, 0, 0.897);
+    position: relative;
+    cursor: pointer;
+    border-radius: 7px;
 }
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bolder;
 }
 .nav-links ul li::after{
     content: '';
@@ -47,4 +59,39 @@ nav img{
 }
 .nav-links ul li:hover::after{
     width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /*transform is used to let the item to be at the center of div*/
+    transform: translate(-50%,-50%);
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+.text-box h1{
+    font-size: 56px;
+
+}
+.text-box p{
+    /* 10px for top 0 for right and left and 40px for buttom*/
+    margin: 10px 0 40px;
+    font-size: 24px;
+    color: white;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: rgba(40, 240, 0, 0.897);
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
 }
