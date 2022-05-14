@@ -52,7 +52,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background-color: #f44336;
+    background-color: white;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -94,4 +94,9 @@ nav img{
     position: relative;
     cursor: pointer;
     border-radius: 8px;
+}
+.hero-btn:hover{
+    border: 1px solid rgba(40, 240, 0, 0.507);
+    background: rgba(40, 240, 0, 0.507);
+    transition: 1s;
 }
