@@ -8,13 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2e7f28c2e.js" crossorigin="anonymous"></script>
+
     <title>SE Factory</title>
 </head>
 <body>
     <section class="header">
        <nav>
-           <a href="index.html"><img class = "icon-style" src="images/SE-Grey-Icon-RGB-01+copy.png"></a>
-           <div class="nav-links">
+           <a href="index.html"><img src="images/SE-Grey-Icon-RGB-01+copy.png" id="icon_img"></a>
+           <div class="nav-links" id="navlinks">
+            <i class="fa-solid fa-x" style="color: black;" onclick="hideMenu()"></i>
                <ul>
                    <li><a href="">Home</a></li>
                    <li><a href="">Get Trained</a></li>
@@ -23,11 +26,11 @@
                    <li><a href="">Blog</a></li>
                    <li><a href="">About Us</a></li>
                    <li><a href="">Contact</a></li>
-                   <li>
-                       <button type="button"><b>Apply Now</b></button>
-                   </li>
+                   
+                   <li><a href="" class = "button"> <b>Apply Now</b> </a></li>
                </ul>
            </div>
+           <i class="fa-solid fa-grip-lines" style="color: rgb(241, 233, 233);" onclick="showMenu()"></i>
         </nav>
 <div class="text-box">       
         <h1>Empowering youth
@@ -36,6 +39,60 @@
              professionals working for <br/>companies all over the world.</p>    
         <a href="" class="hero-btn"><b>Learn More</b></a>
     </div>      
-    </section>
+<script>
+
+    var navlinks = document.getElementById("navlinks");
+
+    function showMenu(){
+        navlinks.style.right = "0";
+        var icon_img = document.getElementById("icon_img");
+        icon_img.style.display = "block";
+
+    }
+    function hideMenu(){
+        navlinks.style.right = "100%";
+    }
+</script>
+</section>
+<div class="background">
+<section class="programs" >
+     <h1> Discover the program
+      <br/>  <b>that’s right for you.</b></h1>
+     <div class="row">
+         <div class="program-col">
+            <h5> > Our Signature Program</h5>
+            <h3>Full Stack Web <br/>Development
+               <br/>__</h3>
+            <p>A 14 week (full-time) bootcamp
+                <br/> that prepares you to become a 
+                <br/> professional software engineer by
+                <br/> developing your technical and 
+                <br/> interpersonal skills.
+                <br/>
+                <br/>
+                Learn More <i class="fa-solid fa-arrow-right"></i>
+            </p>
+
+         </div>
+         <div class="program-col">
+            
+
+
+<h5> > Learn The Basis </h5>
+<h3>Foundations of Computer Science
+    <br/> __ </h3>
+<p>A 6 week (part-time) blended
+    <br/> learning program dedicated to the 
+    <br/> foundational concepts of Computer 
+    <br/> Science; includes online lecture &
+    <br/> in-class sessions.
+    <br/>
+    <br/>
+    Learn More <i class="fa-solid fa-arrow-right"></i>
+</p>
+        </div>
+     </div>
+</section>
+</div>
 </body>
 </html>

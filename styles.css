@@ -1,15 +1,20 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;}
+    font-family: 'Poppins', sans-serif;
+}
+
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: url(images/IMG_9780.JPG);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)), url(images/IMG_9780.JPG);
     background-position: center;
     background-size: cover;
     position: relative;
+
 }
+
 nav{
     display: flex;
     padding: 1% 7%;
@@ -60,6 +65,18 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
+.nav-links ul li a.button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 17px;
+    background: rgba(40, 240, 0, 0.897);
+    position: relative;
+    cursor: pointer;
+    border-radius: 8px;
+}
 .text-box{
     width: 90%;
     color: white;
@@ -74,8 +91,8 @@ nav img{
 }
 .text-box h1{
     font-size: 56px;
-
 }
+
 .text-box p{
     /* 10px for top 0 for right and left and 40px for buttom*/
     margin: 10px 0 40px;
@@ -99,4 +116,107 @@ nav img{
     border: 1px solid rgba(40, 240, 0, 0.507);
     background: rgba(40, 240, 0, 0.507);
     transition: 1s;
+}
+nav .fa-solid{
+    display: none;
+}
+nav a{
+    display: block;
+    z-index: 9;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 29px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: white;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        right: 0;
+        right: -100%;
+        text-align: center;
+        z-index: 2;
+        transition: 1s; 
+        z-index: 8;       
+    }
+    /*making the x sign visible*/
+    nav .fa-solid{
+        display: block;
+        margin: 10px;
+        color: rgb(21, 30, 156);
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: 240px;
+        margin-top: 50px;
+    }
+    .nav-links ul li a.button{
+        background-color: #fff;
+        color: black;
+        font-size: 30px;
+        font-weight: bolder;
+        padding-bottom: 35%;
+        
+    }
+    .nav-links ul li a{
+        font-weight:bolder;
+        list-style: none;
+        color: black;
+        font-size: larger;
+    }
+    .nav-links ul{
+        padding-top: 1px;
+        font-weight: bolder;
+        font-size: 22px;
+    }
+    nav a img{
+        margin-top: 40px;
+        width: 60px;
+        height: 60px;
+        z-index: 9;
+    }
+    
+}
+/*-------------programs-----------*/
+.background{
+    background-color: rgba(40, 240, 0, 0.897);
+
+}
+.programs{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    color: white;
+    font-size: 36px;
+    font-weight: 600;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.program-col{
+    text-align: left;
+    flex-basis: 31%;
+    background: white;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+@media (max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
 }
