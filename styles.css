@@ -328,3 +328,31 @@ h1{
         margin-left: 18px;       
     }
 }
+.Recruitment_Partners{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+
+}
+.Recruitment_Partners p.p1{
+    color: black;
+    text-align: center;
+    font-size: 26px;
+
+}
+.Recruitment_Partners p{
+    color: black;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 30px;
+}
+.Recruitment_Partners img{
+    width: 1050px;
+    height: 150px;
+}
+@media (max-width: 700px){
+    .Recruitment_Partners img{
+        width: 260px;
+        height: 50px;
+    }
+}
