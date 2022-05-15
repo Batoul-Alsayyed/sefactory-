@@ -456,7 +456,6 @@ h1{
 .subscribe{
     background-color: rgb(219, 215, 215);
     text-align: center;
-    margin-bottom: 3%;
 } 
 .subscribe p{
     color: black;
@@ -499,5 +498,82 @@ h1{
         padding: 3%;
         border-radius: 12%;
         font-size: medium;
+    }
+}
+.footer{
+    padding-top: 2%;
+    padding-bottom: 3%;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    padding-left: 5%;
+}
+.footer h4{
+
+    margin-left: 15%;
+    text-align: center;
+}
+.footer a{
+    color: rgba(40, 240, 0, 0.897);
+}
+.footer i{
+    color: white;
+    margin-left: 1%;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.columnfooter1{
+    text-align: left;
+    border-radius: 10px;
+    border-color: white;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    padding: 10px;
+
+}.columnfooter2{
+    flex-grow: 10;
+    border-radius: 10px;
+    border-color: white;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    padding: 10px;
+
+}.columnfooter3{
+    flex-grow: 1;
+    border-radius: 10px;
+    border-color: white;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+@media (max-width: 700px) {
+    .columnfooter{
+        text-align: center;
+
+    }
+    .footer h4{
+        margin-left: 15%;
+        text-align: center;
+    }
+    .footer a{
+        margin-right: 54%;
+        color: rgba(40, 240, 0, 0.897);
+    }
+    .footer i{
+        color: white;
+        margin-left: 1%;
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .Row{
+        flex-direction: column;
+
     }
 }
