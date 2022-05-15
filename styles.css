@@ -361,9 +361,7 @@ h1{
 .mediasection.Row{
     justify-content: space-evenly;
 }
-.mediasection.Row{
-    justify-content: space-evenly;
-}
+
 .mediasection h1{
     color: black;
     margin: auto;
@@ -434,3 +432,23 @@ h1{
     }
 
 }
+/* Strategic Partners*/
+.StrategicPartners{
+    margin: auto;
+    text-align: center;
+ }
+ .StrategicPartners.Row{
+     justify-content: space-between;
+ }
+ 
+ .StrategicPartners h1{
+     color: black;
+     margin: auto;
+     text-align: center;
+     font-weight: bolder;
+  }
+  .StrategicPartners img{
+     height: 100px;
+     width: 350px;
+  }
+ 
