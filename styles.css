@@ -370,12 +370,11 @@ h1{
     text-align: center;
  }
  .mediasection img{
-     color: gray;
     margin-left: 50px;
     height: 150px;
     width: 250px;
  }
-@media (max-width: 700px){
+ @media (max-width: 700px){
     .Recruitment_Partners p.p1{
         color: black;
         text-align: center;
@@ -391,4 +390,47 @@ h1{
         height: 150px;
         padding-bottom: 20px;
     }
+}
+ .fundingpartners img{
+    margin-left: 100px;
+    height: 500px;
+    width: 1050px;
+ }
+ .fundingpartners h1{
+    
+    color: black;
+    margin: auto;
+    text-align: center;
+ }
+.fundingpartners h2{
+    border-bottom: 1px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+ @media (max-width: 700px){
+    .fundingpartners h1{
+    
+        color: black;
+        margin: auto;
+        font-size: large;
+        text-align: center;
+        padding-bottom: 20px;
+     }
+    
+    .fundingpartners img{
+        margin-left: 0px;
+        height: 150px;
+        width: 350px;
+        padding-bottom: 20px;
+
+     }
+     .fundingpartners h2{
+        border-bottom: 1px solid black;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
 }
