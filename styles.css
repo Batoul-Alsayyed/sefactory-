@@ -283,3 +283,8 @@ h1{
         height: 250px;
     }
 }
+.styleh1{
+    color: black;
+    font-size: 45px;
+    font-weight: 2000;
+}
