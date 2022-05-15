@@ -452,3 +452,49 @@ h1{
      width: 350px;
   }
  
+/*Subscribe section*/
+.subscribe{
+    background-color: rgb(219, 215, 215);
+    text-align: center;
+    margin-bottom: 3%;
+} 
+.subscribe p{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+} 
+.subscribe p.p1{
+    color: black;
+    font-size: 27px;
+    font-weight: 400;
+}
+.subscribe button{
+    margin: 3%;
+    background-color: black;
+    color: white;
+    padding: 1%;
+    border-radius: 12%;
+    font-size: medium;
+}
+@media (max-width: 700px) {
+    .subscribe p{
+        color: black;
+        font-weight: bolder;
+        font-size: 28px;
+    } 
+    .subscribe p.p1{
+        color: black;
+        font-size: 23px;
+        font-weight: 400;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .subscribe button{
+        margin: 3%;
+        background-color: black;
+        color: white;
+        padding: 3%;
+        border-radius: 12%;
+        font-size: medium;
+    }
+}
