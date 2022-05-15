@@ -277,14 +277,54 @@ h1{
     font-size: 45px;
     font-weight: 2000;
 }
+.skills img{
+    width: 600px;
+    height: 400px;
+}
+.skills a{
+    color: rgba(40, 240, 0, 0.897);       
+}
 @media (max-width: 700px) {
-    .styleMe{
+    .skills img{
+       width: 350px;
+       height: 250px;
+    }
+    .programs img{
         width: 350px;
         height: 250px;
+ 
     }
-}
-.styleh1{
-    color: black;
-    font-size: 45px;
-    font-weight: 2000;
+    .skills h1{
+        font-size: 28px;
+        font-weight: 2000;
+    }
+
+    .text-box{
+        margin-top: 110px;
+    }
+    .text-box p{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+       
+    .hero-btn{
+       display: inline-block;
+       text-decoration: none;
+       color: white;
+       margin-bottom: 40px;
+       padding: 10px;
+       font-size: 17px;
+       background: rgba(40, 240, 0, 0.897);
+       position: relative;
+       cursor: pointer;
+       border-radius: 8px;
+    }
+    .skills h5{
+        font-size: 18px;
+        margin-left: 20px;
+        word-break: 45px;
+    }
+    .skills a{
+        margin-left: 18px;       
+    }
 }
